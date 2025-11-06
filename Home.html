@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Stage</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ea4d50",
+              "background-light": "#f8f6f6",
+              "background-dark": "#211111",
+            },
+            fontFamily: {
+              display: ["Newsreader"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+      .mask-gradient {
+        mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-neutral-800 dark:text-neutral-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-primary/20 bg-background-light/80 px-10 py-4 backdrop-blur-sm dark:bg-background-dark/80">
+<div class="flex items-center gap-4">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-2xl font-bold text-neutral-900 dark:text-white">The Stage</h2>
+</div>
+
+<nav class="hidden md:flex items-center gap-8">
+  <a href="Home.html" class="hover:text-primary">Home</a>
+  <a href="Events.html" class="hover:text-primary">Shows</a>
+  <a href="EventsD.html" class="hover:text-primary">Details</a>
+  <a href="About.html" class="hover:text-primary">About</a>
+  <a href="Contact.html" class="hover:text-primary">Contact</a>
+</nav>
+
+<div class="flex items-center gap-2">
+<button class="flex h-10 min-w-[90px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary px-5 text-sm font-bold text-white transition-transform hover:scale-105">
+<span>Buy Tickets</span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-background-light text-neutral-900 ring-1 ring-inset ring-neutral-200 transition-colors hover:bg-neutral-100 dark:bg-background-dark dark:text-white dark:ring-neutral-700 dark:hover:bg-neutral-800">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center">
+<div class="w-full max-w-7xl">
+<section class="p-4 @container sm:p-6 lg:p-8">
+<div class="relative flex min-h-[50vh] w-full flex-col items-center justify-center gap-6 overflow-hidden rounded-xl bg-cover bg-center p-8 text-center text-white" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5h3WfgnrcTWj7a58NgV4UYikP85Wr6dMukUSWPQH9A10MKV6uf4qn-cC6yu37-QT0-chAO20InyDDcdHQBnzDnhZGOZN8U8Eb_g_64_RHUA97OruqSRFE4WsZ9upA8G_gi98eJnEu5K5symffwyJn5GDSqfKTqB6fh0uPbMzgAaBTT9SY1eHbG6LOBpHKsSzSkPTV4BdpdTfUae_SwNBuAT5dYDL0ddye6VR7xFVfX_J_VOq60inuH4Vr3kzcRlSIs8tz9TFTd-0h");'>
+<h1 class="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">Experience the Magic of Live Theatre</h1>
+<p class="max-w-2xl text-base text-white/90 md:text-lg">
+                Discover captivating performances and unforgettable stories at The Stage. Book your tickets now for an evening of entertainment.
+              </p>
+<button class="mt-4 flex h-12 min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary px-6 text-base font-bold text-white transition-transform hover:scale-105">
+<span>Explore Shows</span>
+</button>
+</div>
+</section>
+<section class="px-4 py-8 sm:px-6 lg:px-8">
+<h2 class="px-4 pb-6 text-3xl font-bold text-neutral-900 dark:text-white">Featured Shows</h2>
+<div class="relative">
+<div class="mask-gradient flex snap-x snap-mandatory overflow-x-auto pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch gap-6 px-4">
+<div class="flex w-64 snap-center flex-col gap-4 rounded-lg">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVQYCfWvIa-x3g1GsMDTtKoligvTX4lwynrsRgTGkOj1K-FKS9nSeNm-Zx79fIdkyDGnv04zGVEs6jJHruGrX4O0yVP3Fg70o4YdHz98VDmjtq9rWpBcYustKDzhAsmLrhFws-a_lpvzBVZY77jMeh4baDyIXQ9jW-8YO03HZ8HxvxERRepunp6VnwwwUPDcP9gS74cG5yZRnHCw36Pfe3DpgDw_9hOOSNiyo7TIIHUedgh5nVWGFjgIU91n-6LL14nDmwPLCj5PVg");'></div>
+<div>
+<h3 class="text-lg font-semibold text-neutral-900 dark:text-white">A Midsummer Night's Dream</h3>
+<p class="text-sm text-neutral-600 dark:text-neutral-400">A classic tale of love and mischief.</p>
+</div>
+</div>
+<div class="flex w-64 snap-center flex-col gap-4 rounded-lg">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOBNfqIFwD1T0z1vfCqy6C1uPhvKKFaYOakO--iJ0v9qDLgt2Nfk-09dN6aAtBzLCiLW7M9xtJ-w5u1F5QICDIHR2vTAxigbAK8r7OoLYv752n_swdzo83EjNk0PEDEyJC64TBRJWx1OPcUIVouXXB7vFS72YxCKLU2RqZnIuyJcLWshrCHHtd__ablSxaL7j1KwZJTwhv0-7TZ-btRUbYuvJgzG33rGVVTW1fM18k1XSAjqkNrwDcdyVLySRkim65fUDjCOZ_asIx");'></div>
+<div>
+<h3 class="text-lg font-semibold text-neutral-900 dark:text-white">The Phantom's Secret</h3>
+<p class="text-sm text-neutral-600 dark:text-neutral-400">A thrilling mystery unfolds on stage.</p>
+</div>
+</div>
+<div class="flex w-64 snap-center flex-col gap-4 rounded-lg">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIxOt3mGovZLhKs2ruEk713ZjJU7HQ4jCpFmfTLSfHiIV89uHlgxPxoL7fEMKxjDy4yiaQQQ_mw6a0-Tk0jzoHUvRaB9PgCL7735fNU4WuotJHs2MuWtvKe-0peSBqLMaNXLiNHUvKYgm0Q9i8I7N2QFcqwFJL-Rpjl9Az2sWkgrpxw2SvQERj5TPBIV5L1N21KOzBXWeAl1XNUPpgYBJtjiqQmTNpIv9Qtw39VJlsCxTexMq0lcCDl_xMedQW5Rwa_F4LdZEfMP1C");'></div>
+<div>
+<h3 class="text-lg font-semibold text-neutral-900 dark:text-white">The Lion's Roar</h3>
+<p class="text-sm text-neutral-600 dark:text-neutral-400">A heartwarming story of courage and friendship.</p>
+</div>
+</div>
+<div class="flex w-64 snap-center flex-col gap-4 rounded-lg">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkN72Kz9lqLcl2rcSlD_En65XhE5dhE_3zf4nuJxbQcHwpuaG10FDNqiyNIXe4GJRICSWezMzezMVMra7P5R0_C42nzmV0uoZishB5VSXmWnBnqjXHQV2Mg6BGzXg5_CG68KHNm8doBY8uJF7Bb8KRKkIpC6jeyKi9vUtUIdF-gbYwjEE3-ykxY7we464LyFh02_xvhoMzAvQetkLqANzzoYuOTerWDGjxhH4VpjbgSJmxOM5GdJRCY6EjjM8tzzm3CuXkKP1Vt8sw");'></div>
+<div>
+<h3 class="text-lg font-semibold text-neutral-900 dark:text-white">The Glass Menagerie</h3>
+<p class="text-sm text-neutral-600 dark:text-neutral-400">A poignant family drama.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 py-8 sm:px-6 lg:px-8">
+<h2 class="px-4 pb-6 text-3xl font-bold text-neutral-900 dark:text-white">Upcoming Events</h2>
+<div class="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col gap-3">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkN72Kz9lqLcl2rcSlD_En65XhE5dhE_3zf4nuJxbQcHwpuaG10FDNqiyNIXe4GJRICSWezMzezMVMra7P5R0_C42nzmV0uoZishB5VSXmWnBnqjXHQV2Mg6BGzXg5_CG68KHNm8doBY8uJF7Bb8KRKkIpC6jeyKi9vUtUIdF-gbYwjEE3-ykxY7we464LyFh02_xvhoMzAvQetkLqANzzoYuOTerWDGjxhH4VpjbgSJmxOM5GdJRCY6EjjM8tzzm3CuXkKP1Vt8sw");'></div>
+<div>
+<h3 class="text-lg font-semibold text-neutral-900 dark:text-white">The Glass Menagerie</h3>
+<p class="text-sm text-neutral-600 dark:text-neutral-400">A poignant family drama.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVACPdteoRbjMMaKooOurftMFMqg_uKEM_A3brXaVdNXgB2cgTZyWkKAEUkt-T1W6-yqRVsyY1nPv6vCV9Br0tKBRnYlD996uJhMwrOnulmq53hJnzfh3Ud-a6qf8_734yhsGFH1taOQSb-x2I8VgClgNGjzMUI32MkR9L045UUDFX88JIdF3hhX9Wgzycz9uH-O2VR8U8V1Vi6OEwSCPbioR7RhsS99CQvoMhIkN1PvwgUJ1T64Sym59v5De-K1tYaU7btwLt1ysh");'></div>
+<div>
+<h3 class="text-lg font-semibold text-neutral-900 dark:text-white">Hamlet</h3>
+<p class="text-sm text-neutral-600 dark:text-neutral-400">Shakespeare's timeless tragedy.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-8-kqrODeAOgaoi9gcDJTG0ZdT5lQBScjJl-HdKaw9DUdGnmWTckAcM_Tug3EjHXVmbESS2CWArxy6voyIHRgd3-chzy_HP-vsfWuk0736p9pvFME96atOyIyWlEigL3DFgXJqxWy4dZRbtT1yJPBC1p1Nlcm25TfsAjiOHRh5eNxEjw6V9aCjAGX58-9D3s0OQSl7upDVZEo2T1E15ylcbePwkOLc1YzWt3tfXxBMNW922zuL41FrmVgZB1negthoo7kTgRjZ27w");'></div>
+<div>
+<h3 class="text-lg font-semibold text-neutral-900 dark:text-white">The Importance of Being Earnest</h3>
+<p class="text-sm text-neutral-600 dark:text-neutral-400">A witty comedy of manners.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 py-16 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center gap-6 rounded-xl bg-primary/10 px-10 py-20 text-center dark:bg-primary/20">
+<h2 class="max-w-2xl text-4xl font-bold tracking-tight text-neutral-900 dark:text-white">Stay Updated</h2>
+<p class="max-w-2xl text-base text-neutral-700 dark:text-neutral-300">
+                Sign up for our newsletter to receive the latest news, show announcements, and exclusive offers.
+              </p>
+<div class="mt-4 flex w-full max-w-sm flex-col gap-4 sm:flex-row">
+<input class="h-12 flex-grow rounded-full border-neutral-300 bg-background-light px-5 focus:border-primary focus:ring-primary dark:border-neutral-600 dark:bg-background-dark dark:focus:border-primary" placeholder="Enter your email" type="email"/>
+<button class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary px-6 text-base font-bold text-white transition-transform hover:scale-105">
+<span>Subscribe</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="w-full border-t border-primary/20 bg-background-light dark:bg-background-dark">
+<div class="mx-auto max-w-7xl px-5 py-10">
+<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Contact Us</a>
+</div>
+<p class="text-sm text-neutral-500 dark:text-neutral-400">© 2024 The Stage. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StageCraft</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea4d50",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211111",
+            "surface-light": "#C0BCB5",
+            "surface-dark": "#4A6C6F",
+            "accent-light": "#846075",
+            "accent-dark": "#AF5D63",
+            "text-light": "#211111",
+            "text-dark": "#f8f6f6",
+            "subtle-light": "#846075",
+            "subtle-dark": "#C0BCB5"
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .show-card:nth-child(even) .show-content {
+      order: 2;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-surface-light/50 dark:border-surface-dark/20 px-10 py-4">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-2xl font-bold tracking-tighter">StageCraft</h2>
+</div>
+
+<nav class="hidden md:flex items-center gap-8">
+  <a href="Home.html" class="hover:text-primary">Home</a>
+  <a href="Events.html" class="hover:text-primary">Shows</a>
+  <a href="EventsD.html" class="hover:text-primary">Details</a>
+  <a href="About.html" class="hover:text-primary">About</a>
+  <a href="Contact.html" class="hover:text-primary">Contact</a>
+</nav>
+
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white font-bold text-sm h-10 px-6 rounded-lg hover:bg-primary/90 transition-colors">
+<span>Sign In</span>
+</button>
+</div>
+</header>
+<main class="px-4 sm:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-10">
+<div class="layout-content-container flex flex-col max-w-5xl flex-1">
+<div class="flex flex-wrap justify-between items-center gap-4 p-4 mb-4">
+<h1 class="text-5xl font-bold tracking-tighter">All Shows</h1>
+</div>
+<div class="border-b border-surface-light/50 dark:border-surface-dark/20 px-4">
+<div class="flex gap-8">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-4" href="#">
+<p class="text-base font-bold tracking-wide">Upcoming</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors pb-3 pt-4" href="#">
+<p class="text-base font-bold tracking-wide">Past</p>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-12 lg:gap-16 py-12">
+<div class="show-card flex flex-col md:flex-row items-stretch justify-between gap-8">
+<div class="show-content flex-1 flex flex-col gap-4 justify-center">
+<p class="text-accent-light dark:text-accent-dark font-semibold text-sm uppercase tracking-widest">Oct 24, 2024 - 8:00 PM</p>
+<h3 class="text-3xl font-bold">The Midnight Bloom</h3>
+<p class="text-subtle-light dark:text-subtle-dark text-lg leading-relaxed">
+                  A gripping tale of mystery and suspense, set in a remote village where secrets unravel under the cover of darkness.
+                </p>
+<div class="mt-2">
+<button class="bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark font-bold text-sm py-2 px-5 rounded hover:bg-surface-light/80 dark:hover:bg-surface-dark/80 transition-colors">
+<span>View Details</span>
+</button>
+</div>
+</div>
+<div class="flex-1 rounded-lg overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover h-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8Tbq0pBPGtX1PKiHU2n5bhTwz8qU95NbpzZQ0ekHI3DNw15tY9cDpU-UOEw9eMjv6YQgRdt05w273iTQSQNjUhReiLpVbyBNLeYBcHLFzne0kaCqS66iS1z6V_92oypjvXAl1yZqcTQpa_e1aF6cnnZtNiQVFsrz9VjBvoV3BiCYyelWQW_3Ei7RaagoVQ8zS4PBMLDc5yqwC1xj62qr8aIsoJZLNoP6qAkJ3cW3Uf-ZclfVUJUZxOjjWBUTA6wMFoFTsFCf0TUXc");'></div>
+</div>
+</div>
+<div class="show-card flex flex-col md:flex-row items-stretch justify-between gap-8">
+<div class="show-content flex-1 flex flex-col gap-4 justify-center">
+<p class="text-accent-light dark:text-accent-dark font-semibold text-sm uppercase tracking-widest">Nov 15, 2024 - 7:30 PM</p>
+<h3 class="text-3xl font-bold">Laughing Matters</h3>
+<p class="text-subtle-light dark:text-subtle-dark text-lg leading-relaxed">
+                  A hilarious comedy exploring the absurdities of modern life, featuring witty dialogue and unforgettable characters.
+                </p>
+<div class="mt-2">
+<button class="bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark font-bold text-sm py-2 px-5 rounded hover:bg-surface-light/80 dark:hover:bg-surface-dark/80 transition-colors">
+<span>View Details</span>
+</button>
+</div>
+</div>
+<div class="flex-1 rounded-lg overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover h-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCsi3AZOw0Hu4wv2sjYGjAxcS1uAJXSFCTouyxT5Jvx6VPk5b1n0sC-VcC8Gr2doEPu_MVOcyfCpiUrDyB59KwOONxyAtOKHZDjOZUDYUfSRX9Kw6Q3hA4dNnd1UZ1KajY0Qjh650YVamdhn7hm_XeaEL1ZsFl_OHjJOKNujGKLi3x-C3XtuBK5-KdX0MWOMqlhyOMZVrTR_qKTyRi9YDmAPpIMlwY39sUalFDiHzWMgkPOAURRRwcDAAceoTIzAz7qUpEHric8tFV");'></div>
+</div>
+</div>
+<div class="show-card flex flex-col md:flex-row items-stretch justify-between gap-8">
+<div class="show-content flex-1 flex flex-col gap-4 justify-center">
+<p class="text-accent-light dark:text-accent-dark font-semibold text-sm uppercase tracking-widest">Dec 5, 2024 - 8:30 PM</p>
+<h3 class="text-3xl font-bold">Harmony's Echo</h3>
+<p class="text-subtle-light dark:text-subtle-dark text-lg leading-relaxed">
+                  A vibrant musical journey through love, loss, and redemption, filled with enchanting melodies and powerful performances.
+                </p>
+<div class="mt-2">
+<button class="bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark font-bold text-sm py-2 px-5 rounded hover:bg-surface-light/80 dark:hover:bg-surface-dark/80 transition-colors">
+<span>View Details</span>
+</button>
+</div>
+</div>
+<div class="flex-1 rounded-lg overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover h-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9L6P0sc9nKF2bkRqTXta5J4RwnS7IxDfg8jdUO0n59QW4ezXbWBofiZU30csXAFLxG3RVOWr2rY0rGcdUIlkgTL7G1zIZzo2edcHWi3deRdk2X0JWSGFJRwRc8ZDQ-3ia09p66BAqWnc0FYuuMMR_QXJqBm-Pvd69dGQ7y_dSvC2r-kCnCcjhfHqhUschBKx3yoFmmomM141nx2GcXy1ZxjHdS3z8ZyKUWImIRkWa-DNng20bLlyhtKQHlAvYMRLa7EVGXRy1Vqjb");'></div>
+</div>
+</div>
+<div class="show-card flex flex-col md:flex-row items-stretch justify-between gap-8">
+<div class="show-content flex-1 flex flex-col gap-4 justify-center">
+<p class="text-accent-light dark:text-accent-dark font-semibold text-sm uppercase tracking-widest">Jan 10, 2025 - 7:00 PM</p>
+<h3 class="text-3xl font-bold">The Fallen Crown</h3>
+<p class="text-subtle-light dark:text-subtle-dark text-lg leading-relaxed">A tragic epic of betrayal and ambition, where a kingdom's fate hangs in the balance.</p>
+<div class="mt-2">
+<button class="bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark font-bold text-sm py-2 px-5 rounded hover:bg-surface-light/80 dark:hover:bg-surface-dark/80 transition-colors">
+<span>View Details</span>
+</button>
+</div>
+</div>
+<div class="flex-1 rounded-lg overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover h-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMnRw7DZaBMOtdIcU1jzy3X7lh0sBu6VrR9MFJXotgkTNJe7o3i_jnD87Nmzbumti3pT-5hVMi0h-NsqQtUztLEGd8KCyFW8EiliP_zpbkb8CZZ1K5b9Vz37UXGErD6S2kt9hvp5mA13o3Xrrhj9FKHbIHUB8DI3f8byFuQHUbU36YLKUGOnLLpumui52BqwtT86JQI_bG3V6or4QjJq6UfIumtvFFTvChb9QAb8izUtGB8o1AkjheE92uBoU5GQqXYEnaDHqP5lyR");'></div>
+</div>
+</div>
+<div class="show-card flex flex-col md:flex-row items-stretch justify-between gap-8">
+<div class="show-content flex-1 flex flex-col gap-4 justify-center">
+<p class="text-accent-light dark:text-accent-dark font-semibold text-sm uppercase tracking-widest">Feb 2, 2025 - 9:00 PM</p>
+<h3 class="text-3xl font-bold">Whispers of the Void</h3>
+<p class="text-subtle-light dark:text-subtle-dark text-lg leading-relaxed">
+                  An avant-garde exploration of consciousness and reality, challenging perceptions and pushing theatrical boundaries.
+                </p>
+<div class="mt-2">
+<button class="bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark font-bold text-sm py-2 px-5 rounded hover:bg-surface-light/80 dark:hover:bg-surface-dark/80 transition-colors">
+<span>View Details</span>
+</button>
+</div>
+</div>
+<div class="flex-1 rounded-lg overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover h-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBzQ-T9qMD9ldvPl_lhQMfl2NaT9it9FKh8WnXrRD41ebUZbR9HUdkrIIy_vTjzii0bpf0jD1dBb0DWYBWol9RKw3VtmfICZU4xvOn7B_gOTRL4GvfV2IBwQXoGNtcOHEctoNgPJ4pQfk1-JAcLd5hNOG56tsj7G_5zBwGyCCmGGBU5-4Ih_SLDbxvnuNCk3cdhV9B-5SUpUn05fOIB-toXl_2opgUmwqMC6j7s3dGFyS8PNE1oAeD0b9sRCOj_uv7ST_A8H860y5H");'></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

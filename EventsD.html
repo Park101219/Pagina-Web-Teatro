@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Midnight Serenade</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea4d50",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211111",
+            "foreground-light": "#1a1515",
+            "foreground-dark": "#e5e3e3",
+            "subtle-light": "#8f8282",
+            "subtle-dark": "#a19393"
+          },
+          fontFamily: {
+            "display": ["Newsreader", "serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Newsreader', serif;
+    }
+    .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ea4d50' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-primary/20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-4">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-2xl font-bold">StageCraft</h1>
+</div>
+
+<nav class="hidden md:flex items-center gap-8">
+  <a href="Home.html" class="hover:text-primary">Home</a>
+  <a href="Events.html" class="hover:text-primary">Shows</a>
+  <a href="EventsD.html" class="hover:text-primary">Details</a>
+  <a href="About.html" class="hover:text-primary">About</a>
+  <a href="Contact.html" class="hover:text-primary">Contact</a>
+</nav>
+
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-primary/90 transition-colors duration-300">Buy Tickets</button>
+<button class="p-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors duration-300">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-4xl mx-auto">
+<div class="relative rounded-xl overflow-hidden mb-12 shadow-lg">
+<div class="h-96 bg-cover bg-center" style="background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1z05dsnI1nGuaM3fhJTKF-XgaHSHXyT1es5QfbXGFdh1gJFQ29H9BDk9GwjznW0sWVsQmMrYzfRoGTNCp9FRK1MGOkdY_-DqF-f5Y-xX0-ZeSDLcgrXBaW8vczOGHFaMHEOffoy57h6WPmfYMpAzqDZ8ta6SacUOsLuIwpq4lbdklO9s0IsB1dt19tPOtbZNQEWuYrszJnLgY_6jjq-oyHBsDQiT-47e2tkCp0Khx3ygA3Fanq-aHhjOCYbAvGTAoc3HXLHiUG5so');"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h2 class="text-white text-5xl font-bold tracking-tight">The Midnight Serenade</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-2">
+<section class="mb-12">
+<h3 class="text-3xl font-bold border-b-2 border-primary/30 pb-2 mb-4">Synopsis</h3>
+<p class="text-lg leading-relaxed text-subtle-light dark:text-subtle-dark">
+                            In the heart of a bustling city, 'The Midnight Serenade' unfolds as a captivating tale of love, loss, and redemption. Follow the journey of Amelia, a talented musician haunted by her past, as she navigates the complexities of life and rediscovers her passion for music. With a blend of original compositions and classic melodies, this theatrical masterpiece promises an unforgettable experience.
+                        </p>
+</section>
+<section class="mb-12">
+<h3 class="text-3xl font-bold border-b-2 border-primary/30 pb-2 mb-4">Cast</h3>
+<div class="flex space-x-8 overflow-x-auto pb-4 -mx-4 px-4">
+<div class="flex-shrink-0 text-center w-40">
+<img alt="Sophia Carter" class="w-32 h-32 rounded-full mx-auto object-cover mb-4 shadow-md border-4 border-background-light dark:border-background-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0H0ElOcHVVa3gbyfSqZdh4FdueQ9Ge5AYiautsdzgkfU9k9m_jPBlkBP829cWbnWwHCnLkZQNWhnEruxo7SoQ9nmEyGZcgimaxwyATwzyrrPEALuhW2LVfwuFe2z80rpSdL6FrFksvYtdH1y80fTUaOpIj-yYsm4XeZqudKZF26Ci5eK9RFcymVtqN0xV_hK--iewPDTcATc9l-slsNGeLBR88RDxcBqr8i9oBjILVqtnd-HqZNBhifuxH_rC51uom_BQrq754bs8"/>
+<p class="font-bold">Sophia Carter</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Amelia</p>
+</div>
+<div class="flex-shrink-0 text-center w-40">
+<img alt="Ethan Blake" class="w-32 h-32 rounded-full mx-auto object-cover mb-4 shadow-md border-4 border-background-light dark:border-background-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVvMVzTpkLJzTyxV46HFOXN4eo-6tSk1OlfhKOme08ED0IlfYYp8M-rcan65ksGJdQv4g4UFJkbXi8oYkKEouvhzvIyKFnMzTwipRvv-8k36u5yGoakePsbrzZ07Ze4WWBssPTBTUwW2u5lmmrHIP5kKv8-XTMI7TvQ0FWxt8vfxDwI0NgouNgmp2V3IHkAGykVYc5h6cb-552FJZWtLFQuproEZ85FNfNjvV8bMunNmxfjA-J_4Wz5fJzmw917WJ-h8wUM3v_oz41"/>
+<p class="font-bold">Ethan Blake</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Daniel</p>
+</div>
+<div class="flex-shrink-0 text-center w-40">
+<img alt="Olivia Reed" class="w-32 h-32 rounded-full mx-auto object-cover mb-4 shadow-md border-4 border-background-light dark:border-background-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRsemn7VcoWnEs9UPYidwVTlQ3dmOdwu_mVJ1neB7xJS-QyNZWJnPQP4ABI9oq1QN08J2tT4IyejiTlZiiIl5LxbCsQihczYpgxY09-WsSXDoXBipu38gKP7DRVIjjJ--0Z9HCixikxlXNYsefc5v0NYBQbqNj2agSV1K8iwmIB-xNq7eQbZuAFhibkP0aKe19U0vq0Bh3a1w1_WxR0rhtoeo2SDe5cwGazfO5ieB1Eozkw2Rx6fD7Z0CQJxtZKPbzNwhygPBwmcUu"/>
+<p class="font-bold">Olivia Reed</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Isabella</p>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-3xl font-bold border-b-2 border-primary/30 pb-2 mb-4">Gallery</h3>
+<div class="grid grid-cols-2 grid-rows-2 gap-4 h-96">
+<div class="col-span-2 row-span-1 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8FLsh7eOyyg5qtDd1opBfTcsqZzSc1ZPuPWNXY1yirC0AE9U6iGsWU4IRYKM4GNMFaWVDWkUvZ17H1y9QW0-V8FSRtgXGFzb3GYHNu3zG_xZh-LWFRtiII9FdyA8kgOedHYj4hF3pGIhFhZWeRD65WOHzUIYw96NYzMumIYNcitwmGAWzt3X6D6BGr0UTGQZlaS-AucGaKQ4tWfSTXK_cxxrjmPevN2j7pbcOELViE8Z43vsf9aFJ2HB9vbGjOJhoyujQp4Jag98F');"></div>
+<div class="col-span-1 row-span-1 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9uq1J95wGW3HXjBlXC4omilx-gRjPUugUL5FZW44fpgNHBd8AyTOfgk6ekkOiPL8t2Vzc6mTX3tzVGYjWLzupZrIcVUaXtqjBarVqFQiijiRy4nosXjb_-jLZFFYJBVil5CcuSIVninpc5-jqx8lzFVp6vI1RoERuQbfOJO-pdnpsy_ZwITRox4fSuOgFSxtjAF75ESTi1v0FLeLCiS7jqkwVFzWWyknLICP7ZZTVL9SDQHeLjpeZJtqW9Yut2s2-vzeEHz1zQi75');"></div>
+<div class="col-span-1 row-span-1 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYCkMwsc5R7SaIwDpywUnvk95zQZTvz7Unf1IY7X7nDpTsAubthVKUW-Vkwzk_ETGqRClXbvDLlAvYGbH_cPKOa0Vq2DvrfFCo5DcznKWp5ISG05pFlYZQO6P1CA4sgFkQwdLxnWbx7h4PQtyLZ275enbDrUMromZO3FtKNXAfGXCQz043hTVe9VWSi0C7I8_v1DDJDRR5OTonBiUCJ_cwgcWif2KCu6NOPO6UU9ByJFOothz5wJObQRxTgNeerfeJ_jgIw-ykXUdx');"></div>
+</div>
+</section>
+</div>
+<aside>
+<div class="sticky top-24 bg-background-light dark:bg-background-dark p-6 rounded-xl shadow-lg border border-primary/20">
+<h3 class="text-3xl font-bold mb-6 text-center">Tickets</h3>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium mb-1" for="date">Date</label>
+<select class="form-select w-full py-3 px-4 border border-primary/30 rounded-lg bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary" id="date">
+<option>Select Date</option>
+<option>October 25, 2024</option>
+<option>October 26, 2024</option>
+<option>October 27, 2024</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1" for="time">Time</label>
+<select class="form-select w-full py-3 px-4 border border-primary/30 rounded-lg bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary" id="time">
+<option>Select Time</option>
+<option>7:00 PM</option>
+<option>9:30 PM</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1" for="seats">Seats</label>
+<select class="form-select w-full py-3 px-4 border border-primary/30 rounded-lg bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary" id="seats">
+<option>Select Seats</option>
+<option>1 Seat</option>
+<option>2 Seats</option>
+<option>3 Seats</option>
+<option>4 Seats</option>
+</select>
+</div>
+<button class="w-full bg-primary text-white py-3 px-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-colors duration-300" type="submit">
+                                Purchase Tickets
+                            </button>
+</form>
+</div>
+</aside>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
